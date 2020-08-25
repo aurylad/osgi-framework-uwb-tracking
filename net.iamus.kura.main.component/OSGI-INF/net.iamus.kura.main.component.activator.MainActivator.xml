@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" activate="activate" deactivate="deactivate" name="net.iamus.kura.main.component.activator.MainActivator">
+   <reference bind="bindLocationQueriesService" interface="net.iamus.kura.locations.queries.api.LocationQueriesService" name="LocationQueriesService" unbind="unbindLocationQueriesService"/>
+   <reference bind="bindPlacedDeviceQueriesService" interface="net.iamus.kura.placed_devices.queries.api.PlacedDeviceQueriesService" name="PlacedDeviceQueriesService" unbind="unbindPlacedDeviceQueriesService"/>
+   <implementation class="net.iamus.kura.main.component.activator.MainActivator"/>
+</scr:component>

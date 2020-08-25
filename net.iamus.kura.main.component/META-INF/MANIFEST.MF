@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Main Component
+Bundle-SymbolicName: net.iamus.kura.main.component
+Bundle-Version: 1.0.0.qualifier
+Automatic-Module-Name: net.iamus.kura.main.component
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Import-Package: net.iamus.kura.locations.queries.api,
+ net.iamus.kura.models.location,
+ net.iamus.kura.models.placed_device,
+ net.iamus.kura.placed_devices.queries.api,
+ org.osgi.framework;version="1.8.0",
+ org.osgi.service.component;version="1.3.0",
+ org.osgi.service.component.annotations;version="1.3.0",
+ org.slf4j;version="1.7.25"
+Service-Component: OSGI-INF/net.iamus.kura.main.component.activator.MainActivator.xml
+Bundle-ActivationPolicy: lazy

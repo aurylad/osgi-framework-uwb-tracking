@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" activate="activate" deactivate="deactivate" name="net.iamus.kura.location.queries.service.LocationQueries">
+   <service>
+      <provide interface="net.iamus.kura.locations.queries.api.LocationQueriesService"/>
+   </service>
+   <reference bind="bindDatabaseConnectionService" interface="net.iamus.kura.hikari.api.DatabaseConnection" name="DatabaseConnectionService" unbind="unbindDbConnection"/>
+   <implementation class="net.iamus.kura.location.queries.service.LocationQueries"/>
+</scr:component>
